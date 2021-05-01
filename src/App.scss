@@ -1,0 +1,159 @@
+@import 'fonts/fonts.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// portfolio app
+
+#portfolio {
+  background: #1A237E;
+  background: radial-gradient(#1D557D, #020912);
+
+  .color-green {
+    color: #3EE9BF;
+    text-shadow: 0 0 10px #3EE9BF, 0 0 20px #3EE9BF;
+  }
+
+  .color-red {
+    color: #F65130;
+    text-shadow: 0 0 10px #F65130, 0 0 20px #F65130;
+  }
+
+  .color-blue {
+    color: #3A79CB;
+    text-shadow: 0 0 10px #3A79CB, 0 0 20px #3A79CB;
+  }
+
+  .header {
+    flex: 1 0 auto;
+    height: 360px;
+    max-height: 360px;
+    background: rgba(0,0,0,0);
+
+
+   /* @include media-breakpoint('xs') {
+      height: 240px;
+      padding: 16px;
+    }*/
+
+    .hero-text {
+      h1 {
+        color: white;
+        font-size: 30px;
+        font-family: Roboto-Thin;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin-top: 16px;
+        margin-bottom: 0px;
+
+        /*@include media-breakpoint('xs') {
+          font-size: 24px;
+        }*/
+      }
+    }
+
+    .portfolio-top {
+      color: #FFFFFF;
+      font-size: 40px;
+      font-family: Roboto-Thin;
+      text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+      text-align: center;
+      margin: 0px;
+      background-color: #020912;
+
+     /* @include media-breakpoint('xs') {
+        font-size: 24px;
+      }*/
+
+      .subtitle {
+        color: #5E717D;
+        font-size: 14px;
+        text-shadow: 0 0 0;
+      }
+    }
+
+    .portfolio-bottom {
+      color: #FFFFFF;
+      font-size: 40px;
+      font-family: Roboto-Thin;
+      text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+      text-align: center;
+      margin: 0px;
+
+      /*@include media-breakpoint('xs') {
+        font-size: 24px;
+      }*/
+
+      table {
+        border-spacing: 1px;
+        width: 100%;
+        height: 50%;
+      }
+
+      .table-header {
+        height: 35px;
+        color: #5E717D;
+        font-size: 14px;
+        font-family: Roboto-Thin;
+        text-shadow: 0 0 0;
+        background-color: #030713;
+      }
+
+      .portfolio-positions {
+        height: 35px;
+        color: #FFFFFF;
+        font-size: 13px;
+        font-family: Roboto-Light;
+        text-shadow: 0 0 0;
+        background-color: #040A12;
+      }
+
+      .symbol {
+        font-family: Roboto-Black;
+        color: #3A79CB;
+      }
+    }
+  }
+
+  .content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
